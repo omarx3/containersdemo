@@ -1,0 +1,8 @@
+# Use the official Uptime Kuma image from Docker Hub
+FROM louislam/uptime-kuma:latest
+
+# Expose Uptime Kuma default port
+EXPOSE 3001
+
+# Optionally, set up entrypoint or CMD
+CMD ["node", "server/server.js"]
